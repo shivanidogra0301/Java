@@ -7,28 +7,28 @@ public class pattern4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int row=1;
+		
 		Scanner s=new Scanner(System.in);
 		int N=s.nextInt();
-		while(row<=N) {
-			int csp=1;
-			while(csp<=N-row) {
+		for(int row=1;row<=N;row++) {
+			
+			for(int csp=1;csp<=N-row;csp++) {
 				System.out.print(" ");
-				csp++;
+				
 				
 			}
-			int cst=1;
+			
 		int	value=row;
-		while(cst<=row) {
+		for(int cst=1;cst<=row;cst++) {
 			System.out.print(value);
-			cst++;
+			
 			value++;
 		}value=value-2;
-		cst=1;
-		while(cst<row) {
+		
+		for(int cst=1;cst<row;cst++) {
 			System.out.print(value);
 			value--;
-			cst++;
+			
 			
 		}
 		
@@ -36,7 +36,7 @@ public class pattern4 {
 		
 		
 		System.out.println();
-		row++;
+		
 		}
 		
 	}
